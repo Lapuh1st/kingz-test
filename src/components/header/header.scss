@@ -1,4 +1,42 @@
+@import '../variables.scss';
+
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    @media (min-width: $breakpoint-big-screen) {
+        display: none;
+    }
+}
+
+.header__button {
+    border: unset;
+    background-color: unset;
+    background-image: url("../../images/menu.svg");
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+
+    @media (min-width: $breakpoint-big-screen) {
+        display: none;
+    }
+}
+
+.header__user {
+    display: flex;
+}
+
+.header__user-icon {
+    display: none;
+    margin-right: 32px;
+    cursor: pointer;
+
+    @media (min-width: $breakpoint-tablet) {
+        display: block;
+    }
 }

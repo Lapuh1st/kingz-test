@@ -1,8 +1,8 @@
-import MainPage from "./components/mainPage/MainPage";
+import App from "./components/App";
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 ReactDOM.render(
-    <MainPage/>,
+    <App/>,
 document.getElementById('create-article-form')
 );

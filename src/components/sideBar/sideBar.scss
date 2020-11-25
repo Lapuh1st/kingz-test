@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+.sidebar {
+    display: none;
+
+    @media (min-width: $breakpoint-big-screen) {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+

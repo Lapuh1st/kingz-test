@@ -1,26 +1,26 @@
 import React from "react";
-import "./main.scss";
+import "./info-page.scss";
 import Header from "../header/Header";
 import SearchBar from "../searchBar/SearchBar";
-import Content from "../content/Content";
+import InfoPageContent from "./InfoPageContent";
 import Player from "../player/Player";
 import SideBar from "../sideBar/SideBar"
 
-let MainPage = () => {
+let InfoPage = () => {
 
   return (
-    <div className="main-page">
+    <div className="main-page info-page">
       <SideBar />
       <div>
         <div className="main__header">
           <Header/>
           <SearchBar/>
         </div>
-        <Content/>
+        <InfoPageContent/>
         <Player/>
       </div>
     </div>
   );
 };
 
-export default MainPage;
+export default InfoPage;

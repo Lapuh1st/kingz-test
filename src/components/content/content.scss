@@ -1,0 +1,42 @@
+.content {
+
+}
+
+.content__main-image {
+    margin-top: 16px;
+
+    img {
+        max-width: 100%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+.featured__title {
+    margin: 16px 0 8px 0;
+}
+
+.featured__subtitle {
+    margin: 0 0 16px 0;
+}
+
+.featured__list {
+    white-space: nowrap;
+    padding: 0;
+    width: calc(100% + 16px);
+    overflow: hidden;
+}
+
+.featured__item {
+    display: inline-block;
+    text-align: center;
+    margin-right: 40px;
+
+    h3 {
+        font-size: 16px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+}
