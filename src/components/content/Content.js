@@ -4,7 +4,6 @@ import featuredImage1 from '../../images/featured-image-1.png';
 import featuredImage2 from '../../images/featured-image-2.png';
 import './content.scss';
 
-
 const Content = () => {
 
   return (

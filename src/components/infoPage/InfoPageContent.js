@@ -13,8 +13,6 @@ const Content = () => {
     const { teamId } = useParams();
     const currentTeam = useTeamInfo(teamId);
 
-    console.log(currentTeam);
-
     return (
       <div className="info-content">
         <div className="info-content__section info-content__section--title">

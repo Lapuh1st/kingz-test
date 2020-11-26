@@ -1,6 +1,8 @@
+@import './variables.scss';
+
 body {
-    background-color: #181E30;
-    color: #fff;
+    background-color: $color-black;
+    color: $color-white;
     margin: 16px;
     font-family: Arial;
     padding-bottom: 56px;

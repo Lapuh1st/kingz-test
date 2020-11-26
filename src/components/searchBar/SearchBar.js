@@ -28,15 +28,15 @@ const SearchBar = () => {
 
   return (
     <form className="search">
-        <input
-          className="search__input"
-          placeholder="Search for songs, artists etc ..."
-          type="text"
-          value={query}
-          onChange={(event) => onQueryChange(event.target.value)}
-        />
-        {showResults && <SearchResults teams={teams}/>}
-        {showNoResults && <NoSearchResults/>}
+      <input
+        className="search__input"
+        placeholder="Search for songs, artists etc ..."
+        type="text"
+        value={query}
+        onChange={(event) => onQueryChange(event.target.value)}
+      />
+      {showResults && <SearchResults teams={teams}/>}
+      {showNoResults && <NoSearchResults/>}
     </form>
   );
 };
