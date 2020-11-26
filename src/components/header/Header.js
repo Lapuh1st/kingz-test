@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import settings from '../../images/settings.svg';
 import bell from '../../images/bell.svg';
-import user from '../../images/user.png';
+import featuredImage1 from '../../images/featured-image-1.png';
 
 import './header.scss';
 
@@ -22,7 +22,7 @@ const MainPage = () => {
       <div className="header__user">
         <img className="header__user-icon" src={settings}/>
         <img className="header__user-icon" src={bell}/>
-        <img src={user} />
+        <img width="48" src={featuredImage1} />
       </div>
     </header>
 
