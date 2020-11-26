@@ -1,5 +1,6 @@
 .search {
     margin-top: 16px;
+    position: relative;
 }
 
 .search__input {
@@ -19,5 +20,51 @@
 
     &::placeholder {
         color: #8B8E97;
+    }
+}
+
+.search__results {
+    background: #181E30;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    position: absolute;
+    width: 100%;
+    margin-top: 8px;
+}
+
+.search__list {
+    list-style: none;
+    padding: 16px;
+    box-sizing: border-box;
+    max-height: 375px;
+    overflow-y: scroll;
+
+    a {
+        color: #8B8E97;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        display: block;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.search__item {
+    display: flex;
+    align-items: center;
+
+
+
+    img {
+        border-radius: 50%;
+        width: 24px;
+    }
+
+    span {
+        margin-left: 24px;
     }
 }

@@ -34,5 +34,8 @@
     "react-select": "^3.0.4",
     "react-router-dom": "^5.2.0",
     "redux": "^4.0.5"
-  }
+  },
+  "browserslist": [
+    "since 2017-06"
+  ]
 }

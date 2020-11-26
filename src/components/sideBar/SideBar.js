@@ -1,14 +1,17 @@
-import React from "react";
-import "./sideBar.scss";
-import sidebar from "../../images/sidebar.jpg";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import sidebar from '../../images/sidebar.jpg';
+import './sideBar.scss';
 
-let SideBar = () => {
+const SideBar = () => {
 
   return (
     <aside className="sidebar show">
+      <Link to="/">
         <img src={sidebar}/>
+      </Link>
     </aside>
-    
+
   );
 };
 

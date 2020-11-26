@@ -1,12 +1,12 @@
-import React from "react";
-import "./info-page.scss";
-import Header from "../header/Header";
-import SearchBar from "../searchBar/SearchBar";
-import InfoPageContent from "./InfoPageContent";
-import Player from "../player/Player";
-import SideBar from "../sideBar/SideBar"
+import React from 'react';
+import Header from '../header/Header';
+import SearchBar from '../searchBar/SearchBar';
+import InfoPageContent from './InfoPageContent';
+import Player from '../player/Player';
+import SideBar from '../sideBar/SideBar';
+import './info-page.scss';
 
-let InfoPage = () => {
+const InfoPage = () => {
 
   return (
     <div className="main-page info-page">

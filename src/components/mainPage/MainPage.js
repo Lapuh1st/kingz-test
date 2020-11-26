@@ -1,13 +1,12 @@
-import React from "react";
-import "./main.scss";
-import Header from "../header/Header";
-import SearchBar from "../searchBar/SearchBar";
-import Content from "../content/Content";
-import Player from "../player/Player";
-import SideBar from "../sideBar/SideBar"
+import React from 'react';
+import Header from '../header/Header';
+import SearchBar from '../searchBar/SearchBar';
+import Content from '../content/Content';
+import Player from '../player/Player';
+import SideBar from '../sideBar/SideBar';
+import './main.scss';
 
-let MainPage = () => {
-
+const MainPage = () => {
   return (
     <div className="main-page">
       <SideBar />

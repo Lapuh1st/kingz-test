@@ -1,15 +1,12 @@
 @import '../variables.scss';
 
 .main-page {
-
     @media (min-width: $breakpoint-big-screen) {
-        display: flex;
         padding-left: 345px;
     }
 }
 
 .main__header {
-
     @media (min-width: $breakpoint-big-screen) {
         display: flex;
         align-items: center;

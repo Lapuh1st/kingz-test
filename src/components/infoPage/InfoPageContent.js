@@ -1,22 +1,28 @@
-import React from "react";
-import infoImg from "../../images/info-content-image.png";
-import infoListImg1 from "../../images/info-list-image.png";
-import infoListImg2 from "../../images/info-list-image-2.png";
-import union from "../../images/union.svg";
-import arrow from "../../images/arrow.svg";
-import featuredImage1 from "../../images/featured-image-1.png";
-import featuredImage2 from "../../images/featured-image-2.png";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import useTeamInfo from '../../hooks/useTeamInfo';
+import infoListImg1 from '../../images/info-list-image.png';
+import infoListImg2 from '../../images/info-list-image-2.png';
+import union from '../../images/union.svg';
+import arrow from '../../images/arrow.svg';
+import featuredImage1 from '../../images/featured-image-1.png';
+import featuredImage2 from '../../images/featured-image-2.png';
 
-let Content = () => {
 
-  return (
-    <div className="info-content">
+const Content = () => {
+    const { teamId } = useParams();
+    const currentTeam = useTeamInfo(teamId);
+
+    console.log(currentTeam);
+
+    return (
+      <div className="info-content">
         <div className="info-content__section info-content__section--title">
             <h1 className="info-content__title">
-                The Prodigy
+                {currentTeam && currentTeam.strTeam}
             </h1>
             <div className="content__main-image">
-                <img src={infoImg} />
+                <img src={currentTeam && currentTeam.strTeamBadge} />
             </div>
             <div className="info-content__albums">
                 <div className="info-content__container">
@@ -86,7 +92,7 @@ let Content = () => {
             </ul>
         </div>
     </div>
-  );
+    );
 };
 
 export default Content;

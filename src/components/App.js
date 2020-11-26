@@ -1,14 +1,15 @@
-import React from "react";
-import MainPage from "./mainPage/MainPage";
-import InfoPage from "./infoPage/InfoPage";
-import "./app.scss";
+import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route
-} from "react-router-dom";
+} from 'react-router-dom';
+import MainPage from './mainPage/MainPage';
+import InfoPage from './infoPage/InfoPage';
+import './app.scss';
 
-let App = () => {
+
+const App = () => {
 
   return (
     <div className="app">
@@ -17,7 +18,7 @@ let App = () => {
             <Route exact path="/">
               <MainPage/>
             </Route>
-            <Route path="/info">
+            <Route path="/info/:teamId">
               <InfoPage />
             </Route>
           </Switch>

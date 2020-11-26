@@ -1,8 +1,8 @@
-import React from "react";
-import "./player.scss";
-import playerImg from "../../images/player-image.png";
+import React from 'react';
+import playerImg from '../../images/player-image.png';
+import './player.scss';
 
-let Player = () => {
+const Player = () => {
 
   return (
     <div className="player">
@@ -18,7 +18,7 @@ let Player = () => {
             </div>
             <div className="player__icons">
                 <div className="player__pause"></div>
-                <div className="player__next"></div>        
+                <div className="player__next"></div>
             </div>
         </div>
     </div>

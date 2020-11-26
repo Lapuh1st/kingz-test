@@ -1,11 +1,12 @@
-import React from "react";
-import "./header.scss";
-import logo from "../../images/logo.svg";
-import user from "../../images/user.png";
-import settings from "../../images/settings.svg";
-import bell from "../../images/bell.svg";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../../images/logo.svg';
+import user from '../../images/user.png';
+import settings from '../../images/settings.svg';
+import bell from '../../images/bell.svg';
+import './header.scss';
 
-let MainPage = () => {
+const MainPage = () => {
 
   return (
     <header>
@@ -13,7 +14,9 @@ let MainPage = () => {
           <button className="header__button"></button>
       </div>
       <div className="header__logo">
-        <img src={logo} />
+        <Link to="/">
+          <img src={logo} />
+        </Link>
       </div>
       <div className="header__user">
         <img className="header__user-icon" src={settings}/>
@@ -21,7 +24,7 @@ let MainPage = () => {
         <img src={user} />
       </div>
     </header>
-    
+
   );
 };
 
