@@ -20,7 +20,7 @@
     white-space: nowrap;
     padding: 0;
     width: calc(100% + 16px);
-    overflow: hidden;
+    overflow-x: auto;
 }
 
 .featured__item {
